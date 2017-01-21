@@ -1,0 +1,135 @@
+
+body {
+	background: midnightBlue;
+	color: white;
+	border: 2px solid goldenrod;
+}
+p {
+	border-bottom: 3px solid red;
+}
+
+.kermit {
+	border: 3px solid green;
+}
+
+#main-div-1 {
+	padding: 10px;
+}
+
+/*SELECTING DECENDANTS*/
+#main-div-2 .kermit{
+	border: 4px dotted purple;
+}
+
+/*SELECTING DIRECT CHILDREN*/
+#main-div-2 > * {
+	border: 4px solid black;
+}
+
+/*SIBLINGS OF*/
+h2 ~ p {
+	border: 3px soild pink;
+}
+
+#mystery-ul {
+	font-family: 'Mystery Quest';
+}
+
+#li-1 {
+	font-size: 30px;
+
+}
+
+#li-2 {
+	font-weight: bold;
+}
+
+#li-3 {
+	text-transform: uppercase;
+}
+
+#flex-kermit {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#flex-kermit > * {
+	max-width: 300px
+}
+
+
+/*Hover on anchor tag*/
+a:hover {
+	font-size: 40px;
+	color: white;
+}
+
+/*active*/
+a:active {
+	background-color: green;
+}
+
+input:focus {
+	background-color: yellow;
+}
+
+/*nth-child*/
+.sub-div li:nth-child(2n+1) {
+	border: 2px solid hotpink;
+	color: orange;
+	background-color: gray;
+}
+
+.sub-div li:nth-child(2n) {
+	color: green;
+
+}
+
+.sub-div li:nth-of-type(2n) {
+
+	background-color: maroon;
+}
+
+section p:nth-child(2) {
+	color: red;
+}
+
+section p:nth-of-type(2) {
+	color: orange;
+}
+
+/*before*/
+#main-div-1::before {
+	content: "\201C";
+	font-size: 60px;
+	font-weight: bold;
+	color: green;
+}
+
+#main-div-1::after {
+	content: "$$$$$$$";
+	color: green;
+}
+
+
+
+
+
+
+
+
+/*#main-div-1 {
+	color: red;
+
+}
+
+.sub-div {
+	color: orange;
+}
+
+img {
+	border: 3px solid orange;
+	margin: 20px;
+}
+*/
